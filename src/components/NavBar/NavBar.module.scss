@@ -1,0 +1,163 @@
+.nav {
+  height: 100vh;
+
+  hr {
+    color: white;
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+
+.side_navbar {
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  width: 170px;
+  background-image: linear-gradient(to bottom, var(--nav-gradiant-1), var(--nav-gradiant-2)), var(--bg-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &_info {
+    height: inherit;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_header_logo {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_logo {
+    height: 55px;
+    width: 55px;
+    background-color: #ffffff;
+    background: var(--logo);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  &_links {
+    height: 100vh;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    height: 25%;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+}
+
+.footer {
+  height: 25%;
+  min-height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 60px;
+  height: 26px;
+  background-color: white;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: #040b28;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.3s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(34px);
+}
+
+.switcher {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth_btn {
+  font-size: 20px;
+  color: white;
+  margin: 20% 20%;
+}
+
+.mini_profile {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px white solid;
+  }
+
+  h1 {
+    font-size: 16px;
+    color: white;
+  }
+
+  p {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .side_navbar {
+    width: 120px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
